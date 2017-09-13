@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>회원가입 페이지</title>
+<link type="text/css" rel="stylesheet" href="css/common.css">
+
+<!-- javascript 내부 -->
+<script type="text/javascript">
+<!--  
+//-->
+	//전역 변수
+	var name = "이원호";
+	var age = 25;
+	title = "자바스크립트 실습"
+	
+	/*함수 선언*/
+	function printInfo(){
+		//html 문서 동적 화면 구성
+		document.write("<hr>");
+		document.write("제목 : "+title+"<br>")
+		document.write("이름 : "+name+"<br>");
+		document.write("나이 : "+age);
+		document.write("<hr>");
+	}
+	
+	printInfo();
+
+	/*페이지 초기화 함수*/
+	function init(){
+		//이벤트 핸들러 연결 검증
+		//alert("init() call");
+
+		//입력 양식(form)의 입력항목 사용방법
+		//document.입력폰.입력항목이름 => 입력항목 객체
+		//document.joinForm.memberId.focus();
+	}
+	
+	/*회원가입의 ID에 focusing*/    /*anonymous 함수*/
+	window.onload = function(){
+		//alert("페이지 로딩")
+		init();
+	}
+	
+	/*
+		입력 문자열 : string
+		길이 : length(속성)
+		trim : 
+	*/
+	function Idcheck(check){
+		var memberIdElement2 = document.getElementById("memberId");
+		var length1 = check.trim().length;
+		if(length1 < 4){
+			var message="다시입력";
+			alert(message);
+			setTimeout(function(){memberIdElement2.focus();}, 1);
+		}
+	}
+		
+	function Pwcheck(check){
+		var memberPwElement = document.getElementById("memberPw");
+		var memberPwConfirmElement = document.getElementById("memberPwConfirm");
+		var length1 = check.trim().length;
+		if(memberPwElement.value != check){
+			var message="다시입력";
+			alert(message);
+			//memberPwConfirmElement.focus();
+			setTimeout(function(){memberPwConfirmElement.focus();}, 1);
+		} else{
+			var message="일치";
+			alert(message);
+		}
+	}
+	
+	function pwstatus(status){
+		var PwElement = document.getElementById("memberPw");
+		var PwConfirmElement = document.getElementById("memberPwConfirm");
+		if (status) {
+			PwElement.type = "text";
+			PwConfirmElement.type = "text";
+		} else {
+			PwElement.type = "password";
+			PwConfirmElement.type = "password";
+		}
+	}
+	
+	function mailselect(index){
+		var domainElement = document.getElementById("domain");
+		var domainElement1 = document.getElementById("read");
+		alert(index);
+		if (index == 0){
+			alert("선택")
+		} else if (index == 1){
+			document.joinForm.read.value=""
+			alert("입력")
+			document.joinForm.read.readOnly=false;
+			document.joinForm.read.style.background="#ffffff"
+		} else{
+			alert("how")
+			document.joinForm.read.style.background="#778899"
+			document.joinForm.read.value=index
+		}
+	}
+	
+	function phone1(value){
+		if (value != 0){
+			document.joinForm.mobile2.focus();
+		} 
+	}
+	
+	function phone(value){
+		if (value.length == 4){
+			alert(value);
+			document.joinForm.mobile3.focus();
+		}
+	}
+	
+</script>
+
+<noscript>스크립트가 정상구동되지 않습니다.</noscript>
+
+</head>
+<!-- <body onload="alert('페이지 로딩 중입니다.')"> -->
+<body>
+	<a href="index.html"><img alt="박보영" src="images/park2.jpg" title="박보영" width="60px" height="60px"></a>
+	<a href="join.html"><img alt="박보영" src="images/park1.jpg" title="박보영" width="60px" height="60px"></a>
+	<a href="login.html"><img alt="정은지" src="images/jung1.jpg" title="정은지" width="60px" height="60px"></a>
+	<!-- 아이디, 비밀번호, 비밀번호확인, 이름, 등급, 연락처, 이메일, 자기소개, 이메일 수신 -->
+	<form name="joinForm" action="">
+		<p><b>기본정보</b></p>
+		<p>회원가입을 위한 필수입력 항목을 입력해 주십시오.</p>
+		<table border="1" width="1300px">
+			<tr height="40px">
+				<td width="250px" align="right"><span class="remark">아이디(*)</span></td>
+				<td width="800px">
+					<input class="import" id="memberId" name="memberId" type="text" size="20" maxlength="20" onblur="Idcheck(this.value)">
+			</tr>
+			<tr height="40px">
+				<td width="250px" align="right"><span class="remark">비밀번호(*)</span></td>
+				<td width="800px">
+					<input class="import" id="memberPw" name="memberPw" type="password" size="20" maxlength="20">
+					<input type="checkbox" id="pwcheck" name="pwcheck" onclick="pwstatus(this.checked)"><span>비밀번호 보이기</span>
+				</td>
+			</tr>
+			<tr height="40px">
+				<td width="250px" align="right"><span class="remark">비밀번호 확인(*)</span></td>
+				<td width="800px">
+				<input class="import" id="memberPwConfirm" name="memberPwConfirm" type="password" size="20" onblur="Pwcheck(this.value)"></td>
+			</tr>
+			<tr height="40px">
+				<td width="250px" align="right"><span class="remark">이름(*)</span></td>
+				<td width="800px"><input class="import" name="memberName" type="text" size="20"></td>
+			</tr>
+			<tr height="40px">
+				<td width="250px" align="right"><span class="remark">등급(*)</span></td>
+				<td width="800px">
+					<input type="radio" name="grade" value="G" disabled="disabled">일반
+					<input type="radio" name="grade" value="S">우수
+					<input type="radio" name="grade" value="A">관리자
+				</td>
+			</tr>
+			<tr height="40px">
+				<td width="250px" align="right">휴대전화</td>
+				<td width="800px">
+					<select id="mobile1" name="number" onchange="phone1(this.value)">
+						<option value="0">:::: 선택 ::::</option>
+						<option>010</option>
+						<option>011</option>
+						<option>070</option>
+				</select>
+				<span class="space">-</span>
+				<input class="size" name="mobile2" id="mobile2" type="text" size="8" onkeyup="phone(this.value)">
+				<span class="space">-</span>
+				<input class="size" name="mobile3" id="mobile3" type="text" size="8">
+				</td>
+			</tr>
+			<tr height="90px">
+				<td width="250px" align="right">이메일</td>
+				<td width="800px">
+					<input class="size" name="email1" type="text" size="10">
+					<span class="space">@</span>
+					<input class="size" id="read" name="email2" type="text" size="20" readonly>
+				 	<select id="domain" name="domain" onchange="mailselect(this.value)">
+						<option value="0">::::::: 선택 :::::::</option>
+						<option>chol.com</option>
+						<option>daum.net</option>
+						<option>dreamwiz.com</option>
+						<option>empal.com</option>
+						<option>gmail.com</option>
+						<option>hanmail.net</option>
+						<option>hanmir.com</option>
+						<option>hanafos.com</option>
+						<option>hotmail.com</option>
+						<option>lycos.co.kr</option>
+						<option>nate.com</option>
+						<option>naver.com</option>
+						<option>paran.com</option>
+						<option>yahoo.co.kr</option>
+						<option value="1">직접입력</option>
+						
+						<!-- <option value="0">::::::: 선택 :::::::</option>
+						<option value="1">chol.com</option>
+						<option value="2">daum.net</option>
+						<option value="3">dreamwiz.com</option>
+						<option value="4">empal.com</option>
+						<option value="5">gmail.com</option>
+						<option value="6">hanmail.net</option>
+						<option value="7">hanmir.com</option>
+						<option value="8">hanafos.com</option>
+						<option value="9">hotmail.com</option>
+						<option value="10">lycos.co.kr</option>
+						<option value="11">nate.com</option>
+						<option value="12">naver.com</option>
+						<option value="13">paran.com</option>
+						<option value="14">yahoo.co.kr</option>
+						<option value="99">직접입력</option> -->
+						
+					</select>
+				</td>
+			</tr>
+			<tr height="40px">
+				<td colspan="2" width="250px">자기소개(*)</td>
+			</tr>
+			<tr>
+				<td colspan="2" width="800px">
+				<textarea name="about" rows="10" cols="100">자기소개를 멋지게 해주세요.</textarea></td>
+			</tr>
+			<tr>
+				<td width="250px" align="right">수신 여부</td>
+				<td width="800px">
+					<input type="radio" name="isEmail" value="1">이메일 수신
+					<input type="radio" name="isEmail" value="0">이메일 수신거부
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input class="button" type="submit" value="◎| 확인">
+					<input class="button" type="reset" value="X| 취소">
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<div class="footer">
+		<span class="space">|</span>
+		<a href="#">Hi!</a>
+		<span class="space">|</span>
+		<a href="#">Hell?!</a>
+		<span class="space">|</span>
+		<a href="#">Hell@?!</a>
+		<span class="space">|</span>
+	</div>
+	
+</body>
+</html>

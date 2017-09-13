@@ -1,0 +1,12 @@
+/*css 파일 */
+/*
+	a 태그, input 입력 양식
+*/
+
+/*a 태그 설정*/
+/*밑줄X, 색상, 글꼴, 크기*/
+a{
+	text-decoration: none;
+	color: #a52a2a;
+	font-size: 20px;
+}

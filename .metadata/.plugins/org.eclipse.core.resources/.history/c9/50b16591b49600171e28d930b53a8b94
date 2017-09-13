@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Div Sample</title>
+</head>
+<body>
+	<h2>Divvvip</h2>
+	<hr>
+	<div>header</div>
+	<div>sidebar</div>
+	<div>contents</div>
+	<div>footer</div>
+	<hr>
+	<div>
+		<span style="color: #33ffff; background-color: #330066;">header</span>
+		<span style="background-color: #669933; width: 100px; color: #ffcc33">header</span>
+		<span style="color: #cc3399">contents</span>
+		<span style="color: #f0f8ff; background-color: #000000">footer</span>
+	</div>
+</body>
+</html>

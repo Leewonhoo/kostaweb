@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Form 예제</title>
+</head>
+<body>
+	<ol>
+		<li>회원 가입 시 구매 적립금을 드리며, 상품 구매시 현금처럼 사용하실 수 있습니다.</li>
+		<li>회원님만을 위한 분야별 정보나 이벤트 등을 고객님의 이메일로 받아 보실 수 있습니다.</li>
+	</ol>
+	<br><br>
+	<p><b>회원정보</b></p>
+	<p>고객님께서 해당하시는 회원 종류를 선택해 주십시오</p>
+	<table border="1">
+		<tr>
+			<td width="250px">회원구분</td>
+			<td width="800px">
+				<input type="radio" value="개인회원" checked="checked">개인회원
+			</td>
+		</tr>
+	</table>
+	<p><b>기본정보</b></p>
+	<p>회원가입을 위한 필수입력 항목을 입력해 주십시오.</p>
+	<table border="1">
+		<tr height="40px">
+			<td width="250px">아이디</td>
+			<td width="800px">
+				<input type="text" size="20">
+				<input type="button" value="아이디중복확인">
+				(영문소문자/숫자, 4~16자)
+			</td>
+		</tr>
+		<tr height="40px">
+			<td width="250px">비밀번호</td>
+			<td width="800px">
+				<input type="password" size="20">
+				(영문 대소문자/숫자, 4~16자)
+			</td>
+		</tr>
+		<tr height="40px">
+			<td width="250px">비밀번호 확인</td>
+			<td width="800px">
+				<input type="password" size="20">
+				(영문 대소문자/숫자, 4~16자)
+			</td>
+		</tr>
+		<tr height="40px">
+			<td width="250px">비밀번호 확인 질문</td>
+			<td width="800px">
+				<select>
+					<option value="1">기억에 남는 추억의 장소는?</option>
+					<option value="2">존경하는 인물은?</option>
+					<option value="3">좋아하는 물건은?</option>
+					<option value="4">좋아하는 글귀는?</option>
+					<option value="5">하고싶지 않은일 할 때 하는 표정은?</option>
+				</select>
+			</td>
+		</tr>
+		<tr height="40px">
+			<td width="250px">비밀번호 확인 답변</td>
+			<td width="800px">
+				<input type="text" size="20">
+			</td>
+		</tr>
+		<tr height="40px">
+			<td width="250px">이름</td>
+			<td width="800px">
+				<input type="text" size="20">
+			</td>
+		</tr>
+		<tr height="40px">
+			<td width="250px">주소</td>
+			<td width="800px">
+				<input type="text" size="10"> -
+				<input type="button" value="우편번호"><br>
+				<input type="text" size="50"> 기본주소<br>
+				<input type="text" size="50"> 나머지주소
+			</td>
+		</tr>
+		<tr height="40px">
+			<td width="250px">유선전화</td>
+			<td width="800px">
+				<input type="text" size="8">
+				- <input type="text" size="8">
+				- <input type="text" size="8">
+			</td>
+		</tr>
+		<tr height="40px">
+			<td width="250px">휴대전화</td>
+			<td width="800px">
+				<select>
+					<option>업음</option>
+					<option>010</option>
+					<option>011</option>
+					<option>070</option>
+				</select>
+				- <input type="text" size="8">
+				- <input type="text" size="8">
+			</td>
+		</tr>
+		<tr height="40px">
+			<td width="250px">이메일</td>
+			<td width="800px">
+				<input type="text" size="10"> @ 
+				<select>
+					<option>::::::: 선택 :::::::</option>
+					<option>chol.com</option>
+					<option>daum.net</option>
+					<option>dreamwiz.com</option>
+					<option>empal.com</option>
+					<option>gmail.com</option>
+					<option>hanmail.net</option>
+					<option>hanmir.com</option>
+					<option>hanafos.com</option>
+					<option>hotmail.com</option>
+					<option>lycos.co.kr</option>
+					<option>nate.com</option>
+					<option>naver.com</option>
+					<option>paran.com</option>
+					<option>yahoo.co.kr</option>
+					<option>직접입력</option>
+				</select>
+				<div>주문 및 배송확인 정보 등이 E-mail로 발송되므로 반드시 수신가능한 E-mail 주소를 입력<br>
+				하여주십시오.</div>
+			</td>
+		</tr>
+		<tr height="40px">
+			<td width="250px">뉴스메일</td>
+			<td width="800px">
+				뉴스 메일을 받으시겠습니까?
+				<input type="radio" name="mailcheck" value="동의" checked="checked">동의
+				<input type="radio" name="mailcheck" value="동의안함">동의안함
+				<input type="radio" name="mailcheck" value="절대수신안함">절대수신안함
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

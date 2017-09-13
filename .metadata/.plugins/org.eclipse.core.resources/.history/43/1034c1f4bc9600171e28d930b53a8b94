@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+
+<!-- internal css -->
+<style type="text/css">
+/*주석*/
+#wrap{
+background-color: #ff3300;
+width: 600px;
+height: 400px;
+margin: 0 auto;      /*마진 가운데 영역*/
+}
+#header{
+background-color: #6600cc;
+width: 600px;
+height: 100px;
+color: white;
+font-size: 40px;      /*폰트 크기*/
+text-align: center;      /*폰트 정렬*/
+line-height: 100px;      /*폰트 상하 위치*/
+}
+#sidebar{
+background-color: #999999;
+width: 200px;
+height: 200px;
+line-height: 200px;
+font-size: 40px;
+float: left;
+}
+#contents{
+background-color: #ff33ff;
+width: 400px;
+height: 200px;
+line-height: 200px;
+float: left;
+font-size: 40px;
+text-align: right;
+}
+#footer{
+background-color: #99ff66;
+width: 600px;
+height: 100px;
+line-height: 100px;
+clear: both;
+font-size: 40px;
+text-align: center;
+}
+span.space{
+	margin: 0 10px;
+}
+a.common{
+text-decoration: none;
+font-size: 10px;
+}
+</style>
+
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<span class="space">|</span>
+			<a class="common" href="#">로그인</a>
+			<span class="space">|</span>
+			<a class="common" href="#">회원가입</a>
+			<span class="space">|</span>
+			<a class="common" href="#">공지사항</a>
+			<span class="space">|</span>
+		</div>
+		<div id="sidebar">sidebar</div>
+		<div id="contents">contents</div>
+		<div id="footer">footer</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/*css 파일 */
+/*
+	a 태그, input 입력 양식
+*/
+
+/*a 태그 설정*/
+/*밑줄X, 색상, 글꼴, 크기*/
+a{
+	text-decoration: none;
+	color: #a52a2a;
+	font-size: 20px;
+}
+
+/*input 입력 설정*/
+/*배경, */
+input.import {
+	background-color: #ccff99;
+}
+
+/*span 설정*/
+span.remark {
+	color: #dc143c;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+/*button 설정*/
+input.button {
+	background-color: #8fbc8f;
+	width: 80px;
+	height: 80px;
+}
+
+select {
+	background-color: #dc143c;
+	height: 40px;
+}

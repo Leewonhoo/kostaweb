@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function init(){
+		var pid = window.opener.document.getElementById("memberId");
+		var id = document.getElementById("reid");
+		id.value = pid.value;
+	}
+	window.onload = function(){
+		init();
+	}
+	/*중복검사*/
+	function idcheck(){
+		var id = document.getElementById("reid").value;
+		var use = document.getElementById("use");
+		if (id == "zxczxc"){
+			document.getElementById("result").innerText="중복 | 다른 아이디 사용";
+			use.disabled = true;
+		} else {
+			document.getElementById("result").innerText="사용가능 | 현재 아이디 사용";
+			use.disabled = false;
+		}
+	}
+	/*아이디 사용*/
+	function iduse(){
+		var pid = window.opener.document.getElementById("memberId");
+		var id = document.getElementById("reid");
+		pid.value = id.value;
+		window.close();
+	}
+</script>
+
+</head>
+<body>
+	<form action="join.html" name="idcheckk">
+		<table border="1" width="100%" height="100%">
+			<tr>
+				<td>아이디</td>
+				<td colspan="2" width="100px"><input id="reid" name="reid" type="text"></td>
+				<td width="400px">
+					<input type="button" value="중복 확인" onclick="idcheck()">
+					<span id="result">중복 버튼 클릭!!</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<input id="use" type="button" value="사용" onclick="iduse()" disabled>
+					<input type="button" value="닫기" onclick="window.close()">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

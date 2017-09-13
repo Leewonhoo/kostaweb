@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Form 예제</title>
+</head>
+<body>
+	<ol>
+		<li>회원 가입 시 구매 적립금을 드리며, 상품 구매시 현금처럼 사용하실 수 있습니다.</li>
+		<li>회원님만을 위한 분야별 정보나 이벤트 등을 고객님의 이메일로 받아 보실 수 있습니다.</li>
+	</ol>
+	<br><br>
+	<p><b>회원정보</b></p>
+	<p>고객님께서 해당하시는 회원 종류를 선택해 주십시오</p>
+	<table border="1">
+		<tr>
+			<td width="150px">회원구분</td>
+			<td width="800px"><input type="radio" value="개인회원" checked="checked"></td>
+		</tr>
+	</table>
+	<p><b>기본정보</b></p>
+	<p>회원가입을 위한 필수입력 항목을 입력해 주십시오.</p>
+	<table border="1">
+		<tr>
+			<td width="150px">아이디</td>
+			<td width="800px">
+				<input type="text" maxlength="20">
+				<input type="button" value="아이디중복확인">
+				(영문소문자/숫자, 4~16자)
+			</td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+		</tr>
+	</table>
+</body>
+</html>

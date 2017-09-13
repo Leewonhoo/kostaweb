@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Table example</title>
+</head>
+<body>
+	<!-- 테이블 -->
+	<table border="2"> <!-- 테이블 굵기 -->
+		<caption>테이블 제목</caption>
+		<tr height="100px"> <!-- 테이블 행  -->
+			<th width="300px" bgcolor="#F00A0">열 제목</th>
+			<td width="200px">열 요소</td>
+		</tr>
+	</table>
+	<br><br>
+	<table border="1" align="center">
+		<tr height="30px">
+			<th width="80px">번호</th>
+			<th width="100px">이름</th>
+			<th width="120px">자바</th>
+			<th width="120px">데이터베이스</th>
+			<th width="120px">평균</th>
+		</tr>
+		<tr height="30px">
+			<td rowspan="2" align="center"><b>1반</b></td>
+			<td bgcolor="#cc99cc" align="center"><b>홍길동</b></td>
+			<td bgcolor="#cc99cc" align="center">100</td>
+			<td bgcolor="#cc99cc" align="center">70</td>
+			<td rowspan="2" align="center">83</td>
+		</tr>
+		<tr height="30px">
+			<td align="center"><b>강감찬</b></td>
+			<td align="center">80</td>
+			<td align="center">80</td>
+		</tr>
+		<tr height="30px">
+			<td rowspan="2" align="center"><b>2반</b></td>
+			<td bgcolor="#cc99cc" align="center"><b>이순신</b></td>
+			<td bgcolor="#cc99cc" align="center">70</td>
+			<td bgcolor="#cc99cc" align="center">100</td>
+			<td rowspan="2" align="center">90</td>
+		</tr>
+		<tr height="30px">
+			<td align="center"><b>김유신</b></td>
+			<td align="center">100</td>
+			<td align="center">90</td>
+		</tr>
+		<tr height="30px">
+			<td colspan="2" bgcolor="#cc99cc" align="center"><b>총계</b></td>
+			<td bgcolor="#cc99cc" align="center">350</td>
+			<td bgcolor="#cc99cc" align="center">340</td>
+			<td align="center">-</td>
+		</tr>
+	</table>
+</body>
+</html>

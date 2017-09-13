@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="css/common.css">
+</head>
+<body>
+
+	<div id="team">
+		<div class="line">
+				<div class="position">
+					<div><img alt="정은지1" src="images/jung1.jpg" title="정은지1"></div>
+					<div class="text">케인</div>
+				</div>
+		</div>
+		
+		<div class="line">
+				<div class="position">
+					<div><img alt="정은지2" src="images/jung2.jpg" title="정은지2"></div>
+					<div class="text">알리</div>
+				</div>
+				<div class="position">
+					<div><img alt="정은지3" src="images/jung3.jpg" title="정은지3"></div>
+					<div class="text">에릭센</div>
+				</div>
+		</div>
+		
+		<div class="line">
+				<div class="position">
+					<div><img alt="박보영1" src="images/park1.jpg" title="박보영1"></div>
+					<div class="text">데이베스</div>
+				</div>
+				<div class="position">
+					<div><img alt="박보영2" src="images/park2.jpg" title="박보영2"></div>
+					<div class="text">완야마</div>
+				</div>
+				<div class="position">
+					<div><img alt="박보영3" src="images/park3.jpg" title="박보영3"></div>
+					<div class="text">뎀벨레</div>
+				</div>
+				<div class="position">
+					<div><img alt="쿠쿠1" src="images/kuku1.jpg" title="쿠쿠1"></div>
+					<div class="text">트리피어</div>
+				</div>
+		</div>
+		<div class="line">
+				<div class="position">
+					<div><img alt="이미자1" src="images/leemi1.jpg" title="이미자1"></div>
+					<div class="text">베르통헌</div>
+				</div>
+				<div class="position">
+					<div><img alt="아이1" src="images/ice1.jpg" title="아이1"></div>
+					<div class="text">알더웨이럴트</div>
+				</div>
+				<div class="position">
+					<div><img alt="이미자2" src="images/leemi2.jpg" title="이미자2"></div>
+					<div class="text">다이어</div>
+				</div>
+		</div>
+		<div class="line">
+				<div class="position">
+					<div><img alt="콩테1" src="images/cong1.jpg" title="콩1"></div>
+					<div class="text">요리스</div>
+				</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>This is Sparta</title>
+<style type=text.css">
+	img[src] {
+		width: 500px;
+		height: 400px;
+	}
+</style>
+</head>
+<body>
+	<a name="top">탑</a>
+	<h1>First Html~!</h1>
+	<h2>First Html~!</h2>
+	<h3>First Html~!</h3>
+	<h4>First Html~!</h4>
+	<h5>First Html~!</h5>
+	<h6>First Html~!</h6>
+	
+	<hr width="80%" align="right"> <!--수평줄-->
+	
+	<b>굵은 글씨</b>
+	<u>밑줄 글씨</u>
+	<i>이텔릭 체</i>
+	<s>가운데 줄</s>
+	<br>
+	<font face="Yj BLOCK 중간" size="30px">saf</font>
+	<br>
+	<ul type="circle">
+		<li>java</li>
+		<li>DB</li>
+		<li>JDBC</li>
+	</ul>
+	<ol type="A" start ="25">
+		<li>java</li>
+		<li>DB</li>
+		<li>JDBC</li>
+	</ol>
+	
+	<a href="http://www.daum.net" target="_blank">담</a>
+	<br>
+	
+	<img alt="정은지" src="images/jung1.jpg">
+	<img alt="정은지" src="images/jung2.jpg">
+	<img alt="정은지" src="images/jung3.jpg">
+	<img alt="박보영" src="images/park1.jpg">
+	<img alt="박보영" src="images/park2.jpg">
+	<img alt="박보영" src="images/park3.jpg">
+	<img alt="이미자" src="images/leemi1.jpg">
+	<img alt="이미자" src="images/leemi2.jpg">
+	<img alt="쿠쿠" src="images/kuku1.jpg">
+	<img alt="쿠쿠" src="images/ice1.jpg">
+</body>
+</html>
