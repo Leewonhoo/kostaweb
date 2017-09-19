@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+</script>
+
+</head>
+<body>
+	<!-- 전체 레이아웃 -->
+	<table border="1" height="620px" width="1350px">
+		<!-- header -->
+		<tr>
+			<td colspan="3" width="1330px" align="center"><input type="image" src="images/Logo.jpg" title="Wcafe" align="middle"></td>
+		</tr>
+		<tr height="20px"></tr>
+		<!-- 메뉴바 -->
+		<tr>
+			<td width="30%" align="center"><a href="#">Home</a></td>
+			<td width="30%" align="center"><a href="#">MyBoard</a></td>
+			<td width="30%" align="center"><a href="#">QnA</a></td>
+		</tr>
+		<tr height="20px"></tr>
+		<!-- body -->
+		<tr height="380px">
+		<td colspan="3">
+			<table border="1" width="1300px" height="400px" align="center">
+				<tr height="50px">
+					<!-- 카테고리 -->
+					<td width="900px">
+						<a href="">전체</a>
+						<span>|</span>
+						<a href="">유머</a>
+						<span>|</span>
+						<a href="">연예</a>
+						<span>|</span>
+						<a href="">스포츠</a>
+						<span>|</span>
+						<a href="">자동차</a>
+					</td>
+					<!-- 검색 -->
+					<td width="200px" align="center">
+						<input type="text" size="15">
+						<input type="image" src="images/search.jpg" title="search" width="20px" height="20px" align="middle">
+					</td>
+				</tr>
+				<tr>
+					<!-- 게시판 -->
+					<td rowspan="2" width="1000px"></td>
+					<td height="100px">
+						<form action="login.html">
+						<table border="1" align="center">
+							<tr>
+								<!-- 로그인 전 -->
+								<td align="center">
+									<input type="text" value="ID"/>
+									<input type="password" value="PW">
+								</td>
+								<td><input type="submit" value="로그인" style="height: 50px;"></td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center">
+									<input type="button" value="ID/PW찾기">
+									<input type="button" value="회원가입"  onclick="Register.html">
+								</td>
+							</tr>
+						</table>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<!-- 로그인 밑 빈공간 -->
+					<td></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<!-- foot -->
+		<tr height="50px">
+			<td colspan="4" width="1366px"></td>
+		</tr>
+	</table>
+</body>
+</html>

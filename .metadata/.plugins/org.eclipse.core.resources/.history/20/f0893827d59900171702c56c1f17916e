@@ -1,0 +1,10 @@
+package work.controller;
+
+public class Kukudan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

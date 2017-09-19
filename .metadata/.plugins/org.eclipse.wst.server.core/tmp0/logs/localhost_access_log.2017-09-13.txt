@@ -268,3 +268,9 @@
 0:0:0:0:0:0:0:1 - - [13/Sep/2017:18:17:33 +0900] "GET /Jsp_sample/service.html?x=63&y=63 HTTP/1.1" 200 411
 0:0:0:0:0:0:0:1 - - [13/Sep/2017:18:17:36 +0900] "GET /Jsp_sample/login.html HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [13/Sep/2017:18:17:42 +0900] "GET /Jsp_sample/service.html?x=58&y=64 HTTP/1.1" 200 411
+127.0.0.1 - - [13/Sep/2017:19:22:58 +0900] "GET / HTTP/1.1" 404 1070
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:23:03 +0900] "GET /FirstProject/Board.jsp HTTP/1.1" 200 1734
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:23:03 +0900] "GET /favicon.ico HTTP/1.1" 404 1081
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:26:19 +0900] "GET /FirstProject/Board.jsp HTTP/1.1" 200 1613
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:35:19 +0900] "GET /FirstProject/Register.jsp HTTP/1.1" 200 5940
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:35:19 +0900] "GET /favicon.ico HTTP/1.1" 404 1081

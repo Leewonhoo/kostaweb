@@ -1,35 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="org.eclipse.wst.html.ui.internal.preferences.ui.HTMLTemplatePreferencePage$HTMLEditTemplateDialog_dialogBounds">
+		<item value="630" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="405" key="DIALOG_HEIGHT"/>
+		<item value="32" key="DIALOG_X_ORIGIN"/>
+		<item value="7" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="phone" key="selection"/>
+		<item value="list.get(0)." key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
-		<item value="false" key="wholeword"/>
+		<item value="true" key="wholeword"/>
 		<list key="findhistory">
-			<item value="phone"/>
-			<item value="phone2"/>
-			<item value="Pwcheck"/>
-			<item value="PwLength"/>
-			<item value="pwcheck"/>
-			<item value="domain"/>
-			<item value="focus"/>
-			<item value="joinForm"/>
-			<item value="memberId"/>
-			<item value="onfo"/>
-			<item value="on"/>
-			<item value="size"/>
-			<item value="button"/>
-			<item value="wnameth"/>
-			<item value="id"/>
+			<item value="list.get(i)."/>
+			<item value="userid"/>
+			<item value="userId"/>
+			<item value="hidden"/>
+			<item value="selectinfor"/>
+			<item value="().length()"/>
+			<item value="viewDto."/>
+			<item value="home"/>
+			<item value="jsp"/>
+			<item value="board"/>
+			<item value="input"/>
+			<item value="move"/>
+			<item value="System"/>
+			<item value="selectLast"/>
+			<item value="null"/>
 		</list>
 		<list key="replacehistory">
-			<item value="width"/>
-			<item value="name"/>
-			<item value="id=&quot;line&quot;"/>
+			<item value="list.get(0)."/>
+			<item value="userId"/>
 			<item value=""/>
-			<item value="size"/>
+			<item value="width"/>
+			<item value="th"/>
+			<item value="1340px"/>
+			<item value="align"/>
+			<item value="method"/>
+			<item value="form"/>
+			<item value="name"/>
+			<item value="action"/>
+			<item value="table"/>
+			<item value="tr"/>
+			<item value="value"/>
+			<item value="a"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

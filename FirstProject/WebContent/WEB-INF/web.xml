@@ -9,4 +9,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>BorderServlet</display-name>
+    <servlet-name>BorderServlet</servlet-name>
+    <servlet-class>work.controller.BorderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BorderServlet</servlet-name>
+    <url-pattern>/Bocontroller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MemberServlet</display-name>
+    <servlet-name>MemberServlet</servlet-name>
+    <servlet-class>work.controller.MemberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/Member</url-pattern>
+  </servlet-mapping>
 </web-app>

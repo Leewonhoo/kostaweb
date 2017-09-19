@@ -1,0 +1,53 @@
+package work.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class BorderServlet
+ */
+public class BorderServlet extends HttpServlet {
+
+	/**
+	 * @see Servlet#init(ServletConfig)
+	 */
+	public void init(ServletConfig config) throws ServletException {
+	}
+
+	/**
+	 * @see Servlet#destroy()
+	 */
+	public void destroy() {
+	}
+	
+	protected void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println(request.getMethod());
+		String action = request.getParameter("action");
+		System.out.println("action : "+action);
+		switch(action) {
+		case "login": login(request, response);
+			break;
+		default :
+			System.out.println("Error");
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		process(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		process(request, response);
+	}
+
+}

@@ -1,0 +1,135 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="work.model.dto.Bmember"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>service</title>
+
+<script type="text/javascript">
+function btn_infor(){
+	document.servicepage.submit();
+}
+</script>
+
+</head>
+<body>
+	<form name="servicepage" method="post" action="controller">
+		<table border="1">
+			<tr>
+				<td>user</td>
+				<td><%= session.getAttribute("userId") %></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" onclick="btn_idSearch()">
+				</td>
+				<td>
+					<input type="hidden" name="action" value="infor">
+					<input type="submit"  value="회원 정보 호출">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="controller?action=logout">로그아웃</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<br>
+	
+	<form name="modiForm" action="controller">
+		<table>
+			<%
+				ArrayList<Bmember> list = (ArrayList)request.getAttribute("Information");
+				if (list != null){
+			%>
+				<tr>
+					<td><span>아이디</span></td>
+					<td><%= list.get(0).getmId().trim() %></td>
+				</tr>
+				<tr>
+					<td><span>비밀번호</span></td>
+					<td>
+						<input type="text" name="moPw" value=<%= list.get(0).getmPw().trim().substring(0, 2)+"****" %>>
+					</td>
+				</tr>
+				<tr>
+					<td><span>이름</span></td>
+					<td><%= list.get(0).getmName().trim() %></td>
+				</tr>
+				<tr>
+					<td><span>닉네임</span></td>
+					<td>
+						<input type="text" name="moPw" value=<%= list.get(0).getmNick().trim() %>>
+					</td>
+				</tr>
+				<tr>
+					<td><span>생일</span></td>
+					<td><%= list.get(0).getmBirth().trim() %></td>
+				</tr>
+				<tr>
+					<td><span>번호</span></td>
+					<td><%= list.get(0).getmPhone().trim() %></td>
+				</tr>
+				<tr>
+					<td><span>이메일</span></td>
+					<td><%= list.get(0).getmMail().trim() %></td>
+				</tr>
+				<tr>
+					<td><span>성별</span></td>
+					<td>
+						<script type="text/javascript">
+							alert(document.modiForm.moGender.value);
+						</script>
+						<%if (list.get(0).getmGender().trim().equals("M")){ %>
+							<input type="radio" name="moGender" value="M" checked="checked">남성
+							<input type="radio" name="moGender" value="F">여성
+						<% } else { %>
+							<input type="radio" name="moGender" value="M">남성
+							<input type="radio" name="moGender" value="F" checked="checked">여성
+						<% } %>
+						
+						<input type="radio" name="moGender" value="M">남성
+						<input type="radio" name="moGender" value="F">여성
+						<script>
+							var length = document.modiForm.moGender.length;
+							if
+							document.modiForm.moGender.value = <%= list.get(0).getmGender().trim() %>;
+							document.modiForm.moGender.checked;
+						</script>
+					</td>
+				</tr>
+				<tr>
+					<td><span>주소</span></td>
+					<td><%= list.get(0).getmAddress() %></td>
+				</tr>
+				<tr>
+					<td><span>질문</span></td>
+					<td>
+						<select name="rQuestion">
+						<option value="1">기억에 남는 추억의 장소는?</option>
+						<option value="2">존경하는 인물은?</option>
+						<option value="3">좋아하는 물건은?</option>
+						<option value="4">좋아하는 글귀는?</option>
+						<option value="5">하고싶지 않은일 할 때 하는 표정은?</option>
+						<script>document.modiForm.rQuestion.value=<%= list.get(0).getmQuest() %></script>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td><span>답변</span></td>
+					<td>
+						<input type="text" name="moAnswer" value=<%= list.get(0).getmAnswer().trim() %>>
+					</td>
+				</tr>
+			<%
+				}
+			%>
+		</table>
+	</form>
+</body>
+</html>
